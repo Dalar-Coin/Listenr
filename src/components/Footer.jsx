@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="bg-indigo-100">
+    <footer className="bg-gray-800">
       {/* <div className="flex flex-col">
         <div className="flex items-center">
           <img height={10} width={50} src={lawIcon} alt="law icon" />

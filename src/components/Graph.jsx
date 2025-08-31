@@ -28,11 +28,12 @@ const Graph = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
+        display: false,
         position: 'top',
       },
       title: {
-        display: true,
-        text: 'Chart.js Line Chart',
+        display: false,
+        text: 'Peaks',
       },
     },
     scales: {
@@ -56,21 +57,23 @@ const Graph = () => {
     // labels,
     datasets: [
       {
-        label: 'Dataset 1',
+        // label: '',
         // data: labels.map(() => faker.number.int({ min: 0, max: 100 })),
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        // borderColor: 'rgb(255, 99, 132)',
+        // backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
   }
 
   return (
     <div>
-      <Line
-        options={options}
-        data={data}
-        style={{ width: '100%', height: '500px' }}
-      />
+      <div>
+        <Line
+          options={options}
+          data={data}
+          style={{ width: '100%', height: '500px' }}
+        />
+      </div>
     </div>
   )
 }
